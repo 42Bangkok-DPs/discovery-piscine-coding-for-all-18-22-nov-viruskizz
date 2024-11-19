@@ -5,8 +5,7 @@ if __name__ == "__main__":
         if nb > 25:
             print("Error")
             exit()
-        while nb <= 25:
-            print(f"Inside the loop, my variable is {nb}")
-            nb += 1
+        for x in range(10):
+            print(f"{x} x {nb} = {x * nb}")
     except Exception as e:
         print(e)
